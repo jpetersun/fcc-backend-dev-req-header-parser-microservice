@@ -1,6 +1,23 @@
-# fcc-backend-dev-req-header-parser-microservice
+# FCC Request Header Parser Microservice
 
-https://salty-anchorage-35286.herokuapp.com/api/whoami
+Get the IP address, preferred language (from header Accept-Language)
+and system info (from header User-Agent) for the device.
+
+### Prerequisites
+
+Node.js 8.10+
+
+### Installing
+
+```
+yarn install
+
+npm start
+```
+
+Local Demo: `localhost:8000/api/whoami`
+
+Live Demo: https://fcc-req-header-parser-microservice-jp.glitch.me/api/whoami
 
 Example Output:
 ```
