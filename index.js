@@ -5,7 +5,12 @@ const requestIp = require('request-ip')
 const app = express()
 const PORT = process.env.PORT || 8000
 
+app.use(express.static('public'))
 app.use(requestIp.mw())
+
+app.get('/', (req, res) => {
+  res.sendFile(`${__dirname}/index.html`)
+})
 
 app.get('/api/whoami', (req, res) => {
   const agent = useragent.parse(req.headers['user-agent'])
